@@ -27,4 +27,5 @@ offset_top = 53.0
 offset_right = 640.0
 offset_bottom = 79.0
 text = "Hello Minimalist!"
+
 [node name="Player" parent="." instance=ExtResource("2_uc3t1")]
