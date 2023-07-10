@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=3 uid="uid://dsnbrdmap1si6"]
 
 [ext_resource type="Texture2D" uid="uid://bqoakl1ddsq4b" path="res://icon.svg" id="1_ckk28"]
-[ext_resource type="PackedScene" path="res://player.tscn" id="2_uc3t1"]
-[ext_resource type="Script" path="res://player.gd" id="3_fmfwb"]
+[ext_resource type="PackedScene" uid="uid://bcqp1vrk2x38h" path="res://player.tscn" id="2_uc3t1"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p7170"]
 
 [node name="Main" type="Node2D"]
 
@@ -30,4 +31,9 @@ offset_bottom = 79.0
 text = "Hello Minimalist!"
 
 [node name="Player" parent="." instance=ExtResource("2_uc3t1")]
-script = ExtResource("3_fmfwb")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(2, 281)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_p7170")
