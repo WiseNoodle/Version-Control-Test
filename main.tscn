@@ -10,4 +10,21 @@
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ckk28")
 
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -576.0
+offset_top = -325.0
+offset_right = 576.0
+offset_bottom = 323.0
+
+[node name="Label" type="Label" parent="HUD/Control"]
+layout_mode = 0
+offset_left = 508.0
+offset_top = 53.0
+offset_right = 640.0
+offset_bottom = 79.0
+text = "Hello Minimalist!"
 [node name="Player" parent="." instance=ExtResource("2_uc3t1")]
