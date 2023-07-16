@@ -31,6 +31,14 @@ offset_bottom = 79.0
 text = "Ola Wise!
 "
 
+[node name="Label2" type="Label" parent="HUD/Control"]
+offset_left = 867.0
+offset_top = 141.0
+offset_right = 1095.0
+offset_bottom = 238.0
+text = "HELLOOOOOOOO
+"
+
 [node name="Player" parent="." instance=ExtResource("2_uc3t1")]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -38,11 +46,3 @@ position = Vector2(2, 281)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_p7170")
-
-[node name="Label" type="Label" parent="."]
-offset_left = 291.0
-offset_top = -184.0
-offset_right = 519.0
-offset_bottom = -87.0
-text = "HELLOOOOOOOO
-"
