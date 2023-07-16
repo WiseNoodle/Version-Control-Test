@@ -38,3 +38,11 @@ position = Vector2(2, 281)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_p7170")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 291.0
+offset_top = -184.0
+offset_right = 519.0
+offset_bottom = -87.0
+text = "HELLOOOOOOOO
+"
